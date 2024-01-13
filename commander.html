@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Moroccan Spirit</title>
+    <link rel="stylesheet" href="stylesC.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>Benzai</span>Deco</a>
+    <ul class="navbar">
+        <li><a href="file:///C:/Users/HP/Desktop/site/accueil.html#">HOME</a></li>
+        <li><a href="file:///C:/Users/HP/Desktop/site/tapis.html" onclick="toggleMenu()">TAPIS</a></li>
+        <li><a href="#" onclick="toggleMenu()">SALON</a></li>
+        <li><a href="#"onclick="toggleMenu()">Decoration</a></li>
+    </ul>
+</header> 
+    <section class="menu" id="menu">
+        <div class="titre">
+            <h2 class="titre-texte"><span>M</span>enu</h2>
+            <p>Decoration marocaine </p>
+        </div>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                    <img src="triya.jfif" alt="">
+                </div>
+                <div class="text">
+                    <h3>Abat jour Salon</h3>
+                    <p>5000 DH</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="decort.jpeg" alt="">
+            
+                </div>
+                <div class="text">
+                    <h3> Decore salon</h3>
+                    <p>4000 DH</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="decort3.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h3> Décore Marocain</h3>
+                    <p>3500 DH</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="decort2.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Abat jour Marocain</h3>
+                    <p>2600 DH</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="decort4.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Decort Marocain</h3>
+                    <p>2000 DH</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="deco7.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Abat jour Marocain</h3>
+                    <p>3500 DH</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="deco8.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Abat jour Marocain</h3>
+                    <p>3000 DH</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="deco9.jpeg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Decort Marocain</h3>
+                    <p>3700 DH</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+     </div>
+    </section>
+    <div class="copyright">
+        <p>copyright 2024 <a href="#">zineb </a>Tous droits reservé</p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header =document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0 );
+        });
+    
+        function toggleMenu(){
+            const tmenuToggle = document.querySelector('.menuToggle');
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

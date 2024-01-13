@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Inscription</title>
+    <link rel="stylesheet" href="stylesF.css">
+    <script language="JavaScript">
+       
+       function verification() {
+            if (document.getElementById("nom").value == "") { alert("Veuillez taper votre nom!"); return false;}
+       
+    
+            if (document.getElementById("eml").value == "") { alert("Veuillez entrer votre adresse e-mail!"); return false;}
+           if (document.getElementById("eml").value.indexOf('@') == -1) { alert("Adresse e-mail incorrecte!"); return false; }    
+        }
+        function verifie() {
+            alert("Inscription ou authentification Reussie!")
+        }
+    </script>
+    
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><span>Benzai</span>Deco</a>
+    <ul class="navbar">
+        <li><a href="file:///C:/Users/HP/Desktop/site/accueil.html#" >HOME</a></li>
+        <li><a href="#">DESIGN</a></li>
+        <li><a href="file:///C:/Users/HP/Desktop/site/formulaire.html">JOIN </a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61552465907432">CONTACT</a></li>
+        <a href="file:///C:/Users/HP/Desktop/site/commander.html" class="btn-reserve">Commander</a>
+    </ul>
+</header>  
+  <center>  <h2 ><u>INSCRIPTION</u></h2><br>
+   <form id="formulaire" action="" method="post" onSubmit="verification()">
+ 
+ <table>
+ <tr> <td><label for="nom">Nom :</label> </td>
+<td> <input type="text" size= "30" id="nom" name="nom" /></td>
+</tr>
+<tr><td>
+  <label for="eml">Adresse e-mail :</label></td>
+<td> <input type="text" size="30" name="eml" id="eml"> </td></tr> 
+ <tr><td><input type="radio" id="choix_femme" name="genre" value="genre_femme" /></td>
+ <td><label for="choix_femme" >Femme</label></td></tr>
+ <tr><td><input type="radio" id="choix_homme" name="genre" value="genre_homme" /></td>
+ <td><label for="choix_homme">Homme</label></td></tr>
+ <tr> <td><label for="nom">type tapis:</label> </td>
+<td> <input type="text" size= "30" id="tapis" name="tapis" /></td>
+</tr>
+<tr> <td><label for="nom">type décort:</label> </td>
+    <td> <input type="text" size= "30" id="decort" name="decort" /></td>
+    </tr>
+</table>
+ <button type="submit" value="ok" onclick="verifie()" >Confirmer</button>
+ <button type="reset" value="nok" >Annuler</button>
+
+ </form>
+</center>
+
+ </body>
+</html>
